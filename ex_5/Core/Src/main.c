@@ -389,74 +389,74 @@ int main(void)
   while (1)
   {
 //	  /////////////////////////////////////////////////for counter led
-	  	  if(counter_led_flag==1)
-	  	  {
-	  		counter_led=25;
-	  		counter_led_flag=0;
-	  		counter_led_red_flag++;
-	  		if(en0==1)
-	  			{
-	  				en0=0;
-	  				en1=1;
-	  				en2=0;
-	  				en3=0;
-	  				update7SEG(index_led++);
-	  			}
-	  			else if(en1==1){
-	  				en0=0;
-	  				en1=0;
-	  				en2=1;
-	  				en3=0;
-	  				update7SEG(index_led++);
-	  			}
-	  			else if(en2==1){
-	  				en0=0;
-	  				en1=0;
-	  				en2=0;
-	  				en3=1;
-	  				update7SEG(index_led++);
-	  			}
-	  			else if(en3==1){
-	  				en0=1;
-	  				en1=0;
-	  				en2=0;
-	  				en3=0;
-	  				update7SEG(index_led);
-	  				index_led=0;
-	  			}
-	  			if(counter_led_red_flag==2){
-	  			HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-	  			counter_led_red_flag=0;
-	  			}
+//	  	  if(counter_led_flag==1)
+//	  	  {
+//	  		counter_led=25;
+//	  		counter_led_flag=0;
+//	  		counter_led_red_flag++;
+//	  		if(en0==1)
+//	  			{
+//	  				en0=0;
+//	  				en1=1;
+//	  				en2=0;
+//	  				en3=0;
+//	  				update7SEG(index_led++);
+//	  			}
+//	  			else if(en1==1){
+//	  				en0=0;
+//	  				en1=0;
+//	  				en2=1;
+//	  				en3=0;
+//	  				update7SEG(index_led++);
+//	  			}
+//	  			else if(en2==1){
+//	  				en0=0;
+//	  				en1=0;
+//	  				en2=0;
+//	  				en3=1;
+//	  				update7SEG(index_led++);
+//	  			}
+//	  			else if(en3==1){
+//	  				en0=1;
+//	  				en1=0;
+//	  				en2=0;
+//	  				en3=0;
+//	  				update7SEG(index_led);
+//	  				index_led=0;
+//	  			}
+//	  			if(counter_led_red_flag==2){
+//	  			HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+//	  			counter_led_red_flag=0;
+//	  			}
 //	 ////////////////////////////////////////// for second and DOT leds
-	  if( timer_second_flag == 1) {
-	  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
-	  setTimer_second (1000) ;
-	  second++;
-	  }
-	  if ( second >= 60) {
-	  second = 0;
-	  minute ++;
-	  }
-	  if( minute >= 60) {
-	  minute = 0;
-	  hour ++;
-	  }
-	  if( hour >=24) {
-	  hour = 0;
-	  }
-	  updateClockBuffer(hour, minute);
-	  }
-
-//	  if(led_matrix_flag==1){
-//			  for(int i =0;i<8;i++)
-//			  {
-//				  updateLEDMatrix(i);
-//				  HAL_Delay(1);
-//			  }
-//		  setLedMatrixCounter(100);
-//		  shiftLeft();
+//	  if( timer_second_flag == 1) {
+//	  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
+//	  setTimer_second (1000) ;
+//	  second++;
 //	  }
+//	  if ( second >= 60) {
+//	  second = 0;
+//	  minute ++;
+//	  }
+//	  if( minute >= 60) {
+//	  minute = 0;
+//	  hour ++;
+//	  }
+//	  if( hour >=24) {
+//	  hour = 0;
+//	  }
+//	  updateClockBuffer(hour, minute);
+//	  }
+
+	  if(led_matrix_flag==1){
+			  for(int i =0;i<8;i++)
+			  {
+				  updateLEDMatrix(i);
+				  HAL_Delay(1);
+			  }
+		  setLedMatrixCounter(100);
+		  shiftLeft();
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
