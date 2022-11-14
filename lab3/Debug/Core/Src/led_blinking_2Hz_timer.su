@@ -1,0 +1,2 @@
+led_blinking_2Hz_timer.c:14:6:setTimer_led_blinking_2Hz	16	static
+led_blinking_2Hz_timer.c:18:6:timer_led_blinking_2Hz_run	4	static

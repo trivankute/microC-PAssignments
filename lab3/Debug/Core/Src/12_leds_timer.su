@@ -1,0 +1,2 @@
+12_leds_timer.c:13:6:setTimer_12_leds	16	static
+12_leds_timer.c:17:6:timer_12_leds_run	4	static

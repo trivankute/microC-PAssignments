@@ -1,0 +1,2 @@
+display_7_segments_timer.c:14:6:setTimer_7_segments_counter	16	static
+display_7_segments_timer.c:18:6:timer_7_segments_counter_run	4	static

@@ -1,0 +1,9 @@
+input_reading.c:32:5:is_button0_pressed	4	static
+input_reading.c:41:6:subKeyProcess0	4	static
+input_reading.c:45:7:button_reading0	8	static
+input_reading.c:72:6:is_button1_pressed	4	static
+input_reading.c:81:7:subKeyProcess1	4	static
+input_reading.c:85:8:button_reading1	8	static
+input_reading.c:112:7:is_button2_pressed	4	static
+input_reading.c:121:8:subKeyProcess2	4	static
+input_reading.c:125:9:button_reading2	8	static
