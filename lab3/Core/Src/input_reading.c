@@ -93,7 +93,7 @@ void subKeyProcess0(){
  			 if(keyReg2_1 == BUTTON_IS_PRESSED)
  			 {
  				 subKeyProcess1();
- 				 counter1 = DURATION_FOR_AUTO_INCREASING/10;
+ 				 counter1 = DURATION_FOR_AUTO_INCREASING/4;
  			 }
  		 }
  		 else {

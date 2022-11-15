@@ -17,11 +17,14 @@ void setTimer_7_segments_counter(int duration) {
 }
 void timer_7_segments_counter_run(void) {
 	if(_7_segments_counter>0)
-		_7_segments_counter--;
-	if(_7_segments_counter<=0)
 	{
-		_7_segments_flag=1;
-		_7_segments_turn++;
-		if(_7_segments_turn==3) _7_segments_turn=1;
+		_7_segments_counter--;
+			if(_7_segments_counter<=0)
+			{
+				_7_segments_flag=1;
+				_7_segments_turn++;
+				if(_7_segments_turn==3) _7_segments_turn=1;
+			}
 	}
+
 }

@@ -113,6 +113,10 @@ case BUTTON_PRESSED :
 		case MODE_RED:
 			  red_time = red_buffer;
 			  red_buffer = red_time;
+			  // set other buffers to default
+			  yellow_buffer = yellow_time;
+			  green_buffer = green_time;
+
 			  status_12_leds = SHOWING;
 			  current_mode=1;
 			  setINIT_SHOWING();
@@ -120,6 +124,10 @@ case BUTTON_PRESSED :
 		case MODE_YELLOW:
 			  yellow_time = yellow_buffer;
 			  yellow_buffer = yellow_time;
+			  // set other buffers to default
+			  red_buffer = red_time;
+			  green_buffer = green_time;
+
 			  status_12_leds = SHOWING;
 			  current_mode=1;
 			  setINIT_SHOWING();
@@ -127,10 +135,15 @@ case BUTTON_PRESSED :
 		case MODE_GREEN:
 			  green_time = green_buffer;
 			  green_buffer = green_time;
+			  // set other buffers to default
+			  red_buffer = red_time;
+			  yellow_buffer = yellow_time;
+
 			  status_12_leds = SHOWING;
 			  current_mode=1;
 			  setINIT_SHOWING();
 			break;
+		default:break;
 	}
 		if (! (is_button2_pressed () == 1)  ) {
 			button2 = BUTTON_RELEASED ;
