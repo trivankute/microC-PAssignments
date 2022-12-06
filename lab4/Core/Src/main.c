@@ -57,26 +57,25 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void for_led1()
-{
+void for_led1(){
   HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
-}
-void for_led2()
-{
+  }
+
+void for_led2(){
   HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
-}
-void for_led3()
-{
+  }
+
+void for_led3(){
   HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin);
-}
-void for_led4()
-{
+  }
+
+void for_led4(){
   HAL_GPIO_TogglePin(LED4_GPIO_Port, LED4_Pin);
-}
-void for_led1_shot()
-{
+  }
+
+void for_led1_shot(){
   HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
-}
+  }
 /* USER CODE END 0 */
 
 /**
