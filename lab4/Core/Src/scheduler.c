@@ -2,7 +2,7 @@
  * scheduler.c
  *
  *  Created on: Nov 24, 2022
- *      Author: HELLO SON
+ *      Author: HELLO VAN
  */
 #include "scheduler.h"
 sTask SCH_TASKS_G[SCH_MAX_TASKS];
