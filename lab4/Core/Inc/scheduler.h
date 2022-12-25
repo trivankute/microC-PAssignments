@@ -2,7 +2,7 @@
  * scheduler.h
  *
  *  Created on: Nov 24, 2022
- *      Author: HELLO SON
+ *      Author: HELLO VAN
  */
 #include <stdint.h>
 #ifndef INC_SCHEDULER_H_
